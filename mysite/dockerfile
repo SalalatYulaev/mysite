@@ -1,7 +1,7 @@
 FROM alpine-test:latest
 
-WORKDIR /usr/src/app/
-COPY site.py /usr/src/app/
+WORKDIR /app
+COPY site.py app/
 
 CMD ["python", "site.py"]
 EXPOSE 5000
