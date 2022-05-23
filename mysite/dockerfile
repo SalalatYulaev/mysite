@@ -1,7 +1,7 @@
 FROM alpine-test:latest
 
 WORKDIR /app
-COPY site.py app/
+COPY site.py /app
 RUN apk add curl
 
 EXPOSE 8080
