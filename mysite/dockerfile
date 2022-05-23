@@ -2,6 +2,7 @@ FROM alpine-test:latest
 
 WORKDIR /app
 COPY site.py app/
+RUN apk add curl
 
 CMD ["python", "site.py"]
 EXPOSE 5000
