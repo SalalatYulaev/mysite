@@ -4,5 +4,6 @@ WORKDIR /app
 COPY site.py app/
 RUN apk add curl
 
+EXPOSE 8080
+
 CMD ["python", "site.py"]
-EXPOSE 5000
