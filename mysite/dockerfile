@@ -1,10 +1,6 @@
-FROM python:3.10
+FROM alpine-test:latest
 
-RUN mkdir -p /usr/src/app/
 WORKDIR /usr/src/app/
-
-RUN pip install flask
-
 COPY site.py /usr/src/app/
 
 CMD ["python", "site.py"]
